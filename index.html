@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io (4)/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io (4)/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="favicon_io (4)/apple-touch-icon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftPath SEN Education</title>
+    <meta
+      name="description"
+      content="Specialist SEN & Education Staffing Solutions for schools, academies and trusts." />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .logo-placeholder img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .stats {
+        margin-top: -40px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .stat {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      input,
+      textarea {
+        padding: 14px;
+        border: 1px solid #d6dce5;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      textarea {
+        min-height: 140px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+
+        line-height: 1.6;
+        color: #333;
+        background: #f4f8fb;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      header {
+        background: #f4f8fb;
+
+        color: #052d50;
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        background: #059a8e;
+
+        color: white;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background: #04786f;
+        transition: ease-in-out 0.3s;
+        scale: calc(1.1);
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        color: #052d50;
+      }
+
+      .card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .services-grid,
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .service,
+      .benefit {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      ul {
+        margin-top: 15px;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .contact {
+        background: #052d50;
+        color: white;
+        text-align: center;
+      }
+
+      .contact a {
+        color: #059a8e;
+        text-decoration: none;
+      }
+
+      footer {
+        background: #031d35;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .site-footer {
+        background: #031d35;
+        color: white;
+        padding: 40px 20px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+      }
+
+      .site-footer a {
+        color: #059a8e;
+        text-decoration: none;
+      }
+
+      .site-footer a:hover {
+        text-decoration: underline;
+      }
+
+      .trust-strip {
+        background: #f4f8fb;
+        padding: 30px 20px;
+        text-align: center;
+        font-weight: bold;
+        color: #052d50;
+      }
+
+      .trust-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.2rem;
+        }
+
+        .buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn {
+          width: 250px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-placeholder">
+          <img src="assets/education.png" alt="Swiftpath Logo" />
+        </div>
+
+        <h1>SwiftPath SEN Education</h1>
+
+        <p>
+          Specialist SEN & Education Staffing Solutions for Schools, Academies
+          and Multi-Academy Trusts
+        </p>
+
+        <div class="buttons">
+          <a href="mailto:info@swiftpatheducation.com" class="btn">
+            Request Staff
+          </a>
+
+          <a href="mailto:info@swiftpatheducation.com" class="btn">
+            Join Our Team
+          </a>
+
+          <a href="#supplier" class="btn"> Request Supplier Pack </a>
+
+          <a href="mailto:info@swiftpatheducation.com" class="btn">
+            Request Compliance Pack
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <h3>Safeguarding First</h3>
+            <p>Robust compliance and vetting processes.</p>
+          </div>
+
+          <div class="stat">
+            <h3>SEN Focused</h3>
+            <p>Supporting schools with specialist staff.</p>
+          </div>
+
+          <div class="stat">
+            <h3>Responsive Service</h3>
+            <p>Fast turnaround for urgent staffing needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="card">
+          <p>
+            SwiftPath SEN Education is a specialist education recruitment agency
+            focused on supplying high-quality support staff to schools and
+            educational settings across London and surrounding areas.
+          </p>
+
+          <br />
+
+          <p>
+            Our mission is simple: to connect schools with dependable,
+            safeguarding-focused professionals who help pupils thrive.
+          </p>
+
+          <br />
+
+          <p>
+            We understand the importance of consistency, professionalism, and
+            safeguarding within education and are committed to building
+            long-term partnerships with schools and Multi-Academy Trusts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="services-grid">
+          <div class="service">SEN Teaching Assistants</div>
+          <div class="service">1:1 Support Staff</div>
+          <div class="service">Learning Support Assistants</div>
+          <div class="service">Behaviour Mentors</div>
+          <div class="service">Classroom Support Staff</div>
+          <div class="service">Long-Term Placements</div>
+          <div class="service">Temporary Cover</div>
+          <div class="service">Temp-to-Perm Recruitment</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Safeguarding & Compliance</h2>
+
+        <div class="card">
+          <p>
+            SwiftPath SEN Education is committed to safer recruitment and
+            safeguarding best practice.
+          </p>
+
+          <ul>
+            <li>Enhanced DBS Checks</li>
+            <li>Right to Work Verification</li>
+            <li>Professional References</li>
+            <li>Qualification Verification</li>
+            <li>Interview & Screening Process</li>
+            <li>Safeguarding Awareness</li>
+            <li>Compliance Documentation</li>
+          </ul>
+
+          <br />
+
+          <p>
+            We operate in accordance with Keeping Children Safe in Education
+            (KCSIE) guidance and maintain robust safeguarding procedures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Our Recruitment Process</h2>
+
+        <div class="card">
+          <ol>
+            <li>Application & Registration</li>
+
+            <li>Face-to-Face Interview</li>
+
+            <li>Identity Verification</li>
+
+            <li>Right to Work Checks</li>
+
+            <li>Enhanced DBS Verification</li>
+
+            <li>Professional References</li>
+
+            <li>Qualification Checks</li>
+
+            <li>Safeguarding Compliance Review</li>
+
+            <li>Candidate Approval & Placement</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Why Schools Choose SwiftPath</h2>
+
+        <div class="benefits-grid">
+          <div class="benefit">✓ Education-focused recruitment</div>
+          <div class="benefit">✓ Responsive and reliable service</div>
+          <div class="benefit">✓ Safeguarding-first approach</div>
+          <div class="benefit">✓ Transparent communication</div>
+          <div class="benefit">✓ Flexible staffing solutions</div>
+          <div class="benefit">✓ Dedicated support</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div>✔ DBS checks carried out prior to placement</div>
+        <div>✔ Safer recruitment procedures in place</div>
+        <div>✔ GDPR Compliant</div>
+        <div>✔ Disability Confident Employer</div>
+        <div>✔ KCSIE Aligned</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Request Staff</h2>
+
+        <div class="card">
+          <form>
+            <input type="text" placeholder="School Name" />
+
+            <input type="text" placeholder="Contact Name" />
+
+            <input type="email" placeholder="Email Address" />
+
+            <textarea
+              placeholder="Tell us about your staffing requirements"></textarea>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">School Supplier Information Pack</h2>
+
+        <div class="card">
+          <p>Request our full compliance and safeguarding pack including:</p>
+
+          <ul>
+            <li>Safeguarding Policy</li>
+            <li>Safer Recruitment Process</li>
+            <li>DBS & Compliance Checks</li>
+            <li>Insurance Information</li>
+            <li>Terms of Business</li>
+            <li>Candidate Vetting Process</li>
+          </ul>
+
+          <br />
+
+          <a
+            href="documents/Swiftpath SEN Education - Supplier Pack.pdf"
+            class="btn"
+            id="supplier">
+            Supplier Information Pack
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="section-title" style="color: white">
+          Partnering With Schools
+        </h2>
+
+        <p>
+          We are currently onboarding schools and education providers for the
+          upcoming academic year.
+        </p>
+
+        <br />
+
+        <p>
+          To discuss your staffing requirements or request our Supplier
+          Information Pack, please contact us.
+        </p>
+
+        <br />
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:info@swiftpatheducation.com"
+            >info@swiftpatheducation.com</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>SwiftPath SEN Education</h4>
+          <p>Specialist SEN & Education Staffing Agency</p>
+          <p>© 2026 All Rights Reserved</p>
+        </div>
+
+        <div>
+          <h4>Compliance</h4>
+          <a href="privacy.html">Privacy Policy</a><br />
+          <a href="safeguarding.html">Safeguarding Policy</a><br />
+          <a href="termsofbusiness.html">Terms of Business</a><br />
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <p>
+            Companies House:
+            <a
+              href="https://find-and-update.company-information.service.gov.uk/company/17294063"
+              >17294063</a
+            >
+          </p>
+          <p>London, UK</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
