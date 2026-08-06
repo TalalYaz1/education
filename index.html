@@ -1,525 +1,1290 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io (4)/favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io (4)/favicon-16x16.png" />
-    <link rel="apple-touch-icon" href="favicon_io (4)/apple-touch-icon.png" />
+    <meta charset="utf-8" />
+
+    <title>SwiftPath SEN Education | Specialist Education Staffing</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SwiftPath SEN Education</title>
+
     <meta
       name="description"
-      content="Specialist SEN & Education Staffing Solutions for schools, academies and trusts." />
+      content="SwiftPath SEN Education provides DBS-checked teaching assistants, SEN support staff and 1:1 classroom practitioners to schools and education providers across the UK." />
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <meta
+      name="keywords"
+      content="SEN teaching assistants, SEN staffing, teaching assistants, 1:1 support, education staffing, school support staff, UK schools" />
 
-      .logo-placeholder img {
-        width: 220px;
-        height: 220px;
-      }
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-      .stats {
-        margin-top: -40px;
-      }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-      }
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet" />
 
-      .stat {
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        text-align: center;
-      }
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet" />
 
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet" />
 
-      input,
-      textarea {
-        padding: 14px;
-        border: 1px solid #d6dce5;
-        border-radius: 8px;
-        font-size: 16px;
-      }
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-      textarea {
-        min-height: 140px;
-      }
+    <!-- Animate -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
 
-      body {
-        font-family: Arial, sans-serif;
-
-        line-height: 1.6;
-        color: #333;
-        background: #f4f8fb;
-      }
-
-      .container {
-        width: 90%;
-        max-width: 1100px;
-        margin: auto;
-      }
-
-      header {
-        background: #f4f8fb;
-
-        color: #052d50;
-        padding: 80px 20px;
-        text-align: center;
-      }
-
-      header h1 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-      }
-
-      header p {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-      }
-
-      .buttons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
-
-      .btn {
-        background: #059a8e;
-
-        color: white;
-        text-decoration: none;
-        padding: 12px 24px;
-        border-radius: 6px;
-        font-weight: bold;
-      }
-
-      .btn:hover {
-        background: #04786f;
-        transition: ease-in-out 0.3s;
-        scale: calc(1.1);
-      }
-
-      section {
-        padding: 70px 20px;
-      }
-
-      .section-title {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 2rem;
-        color: #052d50;
-      }
-
-      .card {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-      }
-
-      .services-grid,
-      .benefits-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-      }
-
-      .service,
-      .benefit {
-        background: white;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-      }
-
-      ul {
-        margin-top: 15px;
-        padding-left: 20px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .contact {
-        background: #052d50;
-        color: white;
-        text-align: center;
-      }
-
-      .contact a {
-        color: #059a8e;
-        text-decoration: none;
-      }
-
-      footer {
-        background: #031d35;
-        color: white;
-        text-align: center;
-        padding: 20px;
-      }
-
-      .site-footer {
-        background: #031d35;
-        color: white;
-        padding: 40px 20px;
-      }
-
-      .footer-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 30px;
-      }
-
-      .site-footer a {
-        color: #059a8e;
-        text-decoration: none;
-      }
-
-      .site-footer a:hover {
-        text-decoration: underline;
-      }
-
-      .trust-strip {
-        background: #f4f8fb;
-        padding: 30px 20px;
-        text-align: center;
-        font-weight: bold;
-        color: #052d50;
-      }
-
-      .trust-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 15px;
-      }
-
-      @media (max-width: 768px) {
-        header h1 {
-          font-size: 2.2rem;
-        }
-
-        .buttons {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .btn {
-          width: 250px;
-          text-align: center;
-        }
-      }
-    </style>
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <header>
+    <!-- =========================================================
+         PAGE LOADER
+    ========================================================== -->
+
+    <div id="spinner">
+      <div class="spinner-ring"></div>
+    </div>
+
+    <!-- =========================================================
+         TOP BAR
+    ========================================================== -->
+
+    <div class="topbar">
       <div class="container">
-        <div class="logo-placeholder">
-          <img src="assets/education.png" alt="Swiftpath Logo" />
-        </div>
-
-        <h1>SwiftPath SEN Education</h1>
-
-        <p>
-          Specialist SEN & Education Staffing Solutions for Schools, Academies
-          and Multi-Academy Trusts
-        </p>
-
-        <div class="buttons">
-          <a href="mailto:info@swiftpatheducation.com" class="btn">
-            Request Staff
-          </a>
-
-          <a href="mailto:info@swiftpatheducation.com" class="btn">
-            Join Our Team
-          </a>
-
-          <a href="#supplier" class="btn"> Request Supplier Pack </a>
-
-          <a href="mailto:info@swiftpatheducation.com" class="btn">
-            Request Compliance Pack
-          </a>
-        </div>
-      </div>
-    </header>
-    <section class="stats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat">
-            <h3>Safeguarding First</h3>
-            <p>Robust compliance and vetting processes.</p>
+        <div class="topbar-inner">
+          <div class="topbar-left">
+            <span>
+              <i class="bi bi-shield-check"></i>
+              Safeguarding-led education staffing
+            </span>
           </div>
 
-          <div class="stat">
-            <h3>SEN Focused</h3>
-            <p>Supporting schools with specialist staff.</p>
-          </div>
+          <div class="topbar-right">
+            <a href="mailto:info@swiftpath.uk">
+              <i class="bi bi-envelope"></i>
+              info@swiftpath.uk
+            </a>
 
-          <div class="stat">
-            <h3>Responsive Service</h3>
-            <p>Fast turnaround for urgent staffing needs.</p>
+            <a href="tel:+447465989610">
+              <i class="bi bi-telephone"></i>
+              +44 7465 989610
+            </a>
+
+            <span>
+              <i class="bi bi-clock"></i>
+              24/7 staffing enquiries
+            </span>
           </div>
         </div>
       </div>
-    </section>
-    <section>
+    </div>
+
+    <!-- =========================================================
+         NAVBAR
+    ========================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top main-navbar">
       <div class="container">
-        <h2 class="section-title">About Us</h2>
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img
+            src="img/education-logo.png"
+            class="brand-logo"
+            alt="SwiftPath SEN Education" />
+        </a>
 
-        <div class="card">
-          <p>
-            SwiftPath SEN Education is a specialist education recruitment agency
-            focused on supplying high-quality support staff to schools and
-            educational settings across London and surrounding areas.
-          </p>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <br />
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto align-items-lg-center">
+            <a href="index.html" class="nav-link active"> Home </a>
 
-          <p>
-            Our mission is simple: to connect schools with dependable,
-            safeguarding-focused professionals who help pupils thrive.
-          </p>
+            <a href="about.html" class="nav-link"> About </a>
 
-          <br />
+            <a href="service.html" class="nav-link"> Services </a>
 
-          <p>
-            We understand the importance of consistency, professionalism, and
-            safeguarding within education and are committed to building
-            long-term partnerships with schools and Multi-Academy Trusts.
-          </p>
+            <a href="feature.html" class="nav-link"> Our Approach </a>
+
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </div>
+
+          <div class="navbar-actions">
+            <a href="contact.html" class="btn btn-outline-brand">
+              Get in touch
+            </a>
+
+            <a href="#enquiry" class="btn btn-brand">
+              Request staff
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="navbar-social">
+            <a
+              href="https://www.linkedin.com/company/swiftpath-protection"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/swiftpathp/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
+      </div>
+    </nav>
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section class="hero-section">
+      <div class="hero-background">
+        <img
+          src="img/HeroTemp.png"
+          alt="Teaching assistant supporting pupils in a classroom" />
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="hero-content wow fadeInUp" data-wow-delay="0.1s">
+              <div class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+
+                Specialist education staffing
+              </div>
+
+              <h1>
+                The right support
+                <span>for every learner.</span>
+              </h1>
+
+              <p class="hero-description">
+                SwiftPath SEN Education provides reliable, DBS-checked teaching
+                assistants and specialist support staff to schools, academies
+                and education providers across the UK.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#enquiry" class="btn btn-brand btn-lg">
+                  Request staff
+
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a href="service.html" class="btn btn-hero-outline btn-lg">
+                  Explore our services
+                </a>
+              </div>
+
+              <div class="hero-trust">
+                <div class="trust-item">
+                  <div class="trust-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+
+                  <div>
+                    <strong>Safeguarding-led</strong>
+                    <span>Recruitment & compliance</span>
+                  </div>
+                </div>
+
+                <div class="trust-divider"></div>
+
+                <div class="trust-item">
+                  <div class="trust-icon">
+                    <i class="bi bi-person-check"></i>
+                  </div>
+
+                  <div>
+                    <strong>DBS-checked staff</strong>
+                    <span>Ready for school environments</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="hero-card wow fadeInRight" data-wow-delay="0.3s">
+              <div class="hero-card-icon">
+                <i class="bi bi-people"></i>
+              </div>
+
+              <span class="hero-card-label"> SCHOOL STAFFING </span>
+
+              <h3>Support that makes a difference.</h3>
+
+              <p>
+                From 1:1 SEN support to urgent classroom cover, we help schools
+                access dependable education professionals when they need them.
+              </p>
+
+              <a href="#enquiry">
+                Tell us what you need
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll to explore</span>
+
+        <i class="bi bi-arrow-down"></i>
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <h2 class="section-title">Our Services</h2>
-
-        <div class="services-grid">
-          <div class="service">SEN Teaching Assistants</div>
-          <div class="service">1:1 Support Staff</div>
-          <div class="service">Learning Support Assistants</div>
-          <div class="service">Behaviour Mentors</div>
-          <div class="service">Classroom Support Staff</div>
-          <div class="service">Long-Term Placements</div>
-          <div class="service">Temporary Cover</div>
-          <div class="service">Temp-to-Perm Recruitment</div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">Safeguarding & Compliance</h2>
-
-        <div class="card">
-          <p>
-            SwiftPath SEN Education is committed to safer recruitment and
-            safeguarding best practice.
-          </p>
-
-          <ul>
-            <li>Enhanced DBS Checks</li>
-            <li>Right to Work Verification</li>
-            <li>Professional References</li>
-            <li>Qualification Verification</li>
-            <li>Interview & Screening Process</li>
-            <li>Safeguarding Awareness</li>
-            <li>Compliance Documentation</li>
-          </ul>
-
-          <br />
-
-          <p>
-            We operate in accordance with Keeping Children Safe in Education
-            (KCSIE) guidance and maintain robust safeguarding procedures.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">Our Recruitment Process</h2>
-
-        <div class="card">
-          <ol>
-            <li>Application & Registration</li>
-
-            <li>Face-to-Face Interview</li>
-
-            <li>Identity Verification</li>
-
-            <li>Right to Work Checks</li>
-
-            <li>Enhanced DBS Verification</li>
-
-            <li>Professional References</li>
-
-            <li>Qualification Checks</li>
-
-            <li>Safeguarding Compliance Review</li>
-
-            <li>Candidate Approval & Placement</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">Why Schools Choose SwiftPath</h2>
-
-        <div class="benefits-grid">
-          <div class="benefit">✓ Education-focused recruitment</div>
-          <div class="benefit">✓ Responsive and reliable service</div>
-          <div class="benefit">✓ Safeguarding-first approach</div>
-          <div class="benefit">✓ Transparent communication</div>
-          <div class="benefit">✓ Flexible staffing solutions</div>
-          <div class="benefit">✓ Dedicated support</div>
-        </div>
-      </div>
-    </section>
+    <!-- =========================================================
+         TRUST STRIP
+    ========================================================== -->
 
     <section class="trust-strip">
-      <div class="container trust-grid">
-        <div>✔ DBS checks carried out prior to placement</div>
-        <div>✔ Safer recruitment procedures in place</div>
-        <div>✔ GDPR Compliant</div>
-        <div>✔ Disability Confident Employer</div>
-        <div>✔ KCSIE Aligned</div>
-      </div>
-    </section>
-
-    <section>
       <div class="container">
-        <h2 class="section-title">Request Staff</h2>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-4">
+            <div class="trust-heading">
+              <span>BUILT AROUND</span>
 
-        <div class="card">
-          <form>
-            <input type="text" placeholder="School Name" />
+              <h3>What schools need most.</h3>
+            </div>
+          </div>
 
-            <input type="text" placeholder="Contact Name" />
+          <div class="col-lg-8">
+            <div class="trust-grid">
+              <div class="trust-grid-item">
+                <i class="bi bi-shield-check"></i>
 
-            <input type="email" placeholder="Email Address" />
+                <div>
+                  <strong>Safeguarding first</strong>
+                  <span>Compliance-led staffing</span>
+                </div>
+              </div>
 
-            <textarea
-              placeholder="Tell us about your staffing requirements"></textarea>
+              <div class="trust-grid-item">
+                <i class="bi bi-person-hearts"></i>
 
-            <button type="submit" class="btn">Submit Enquiry</button>
-          </form>
+                <div>
+                  <strong>Pupil focused</strong>
+                  <span>Individual support</span>
+                </div>
+              </div>
+
+              <div class="trust-grid-item">
+                <i class="bi bi-lightning-charge"></i>
+
+                <div>
+                  <strong>Responsive</strong>
+                  <span>Fast staffing solutions</span>
+                </div>
+              </div>
+
+              <div class="trust-grid-item">
+                <i class="bi bi-chat-dots"></i>
+
+                <div>
+                  <strong>Clear communication</strong>
+                  <span>Reliable school partnership</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- =========================================================
+         INTRODUCTION
+    ========================================================== -->
+
+    <section class="section section-intro">
       <div class="container">
-        <h2 class="section-title">School Supplier Information Pack</h2>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="image-stack">
+              <div class="main-image">
+                <img src="img/education.png" alt="SEN education support" />
+              </div>
 
-        <div class="card">
-          <p>Request our full compliance and safeguarding pack including:</p>
+              <div class="floating-stat">
+                <div class="floating-stat-icon">
+                  <i class="bi bi-heart"></i>
+                </div>
 
-          <ul>
-            <li>Safeguarding Policy</li>
-            <li>Safer Recruitment Process</li>
-            <li>DBS & Compliance Checks</li>
-            <li>Insurance Information</li>
-            <li>Terms of Business</li>
-            <li>Candidate Vetting Process</li>
-          </ul>
+                <div>
+                  <strong>Every learner matters</strong>
 
-          <br />
+                  <span> Support built around individual needs </span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <a
-            href="documents/Swiftpath SEN Education - Supplier Pack.pdf"
-            class="btn"
-            id="supplier">
-            Supplier Information Pack
+          <div class="col-lg-6">
+            <div class="section-content">
+              <div class="section-label">WHO WE ARE</div>
+
+              <h2>
+                Specialist staffing with
+                <span>purpose behind it.</span>
+              </h2>
+
+              <p class="lead">
+                SwiftPath SEN Education is a UK-based education staffing
+                provider focused on connecting schools with reliable,
+                professional support staff.
+              </p>
+
+              <p>
+                We specialise in teaching assistants, learning support
+                practitioners and 1:1 classroom support for pupils with
+                additional learning needs.
+              </p>
+
+              <p>
+                Our approach combines safeguarding, careful recruitment and
+                responsive school support to help create positive learning
+                environments for pupils and staff.
+              </p>
+
+              <a href="about.html" class="text-link">
+                Discover more about SwiftPath
+
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SERVICES
+    ========================================================== -->
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="section-label">OUR SERVICES</div>
+
+          <h2>
+            Specialist support for
+            <span>school environments.</span>
+          </h2>
+
+          <p>
+            Flexible staffing solutions designed around the needs of schools,
+            pupils and education teams.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- SERVICE 1 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">01</div>
+
+              <div class="service-icon">
+                <i class="bi bi-person-hearts"></i>
+              </div>
+
+              <h3>1:1 SEN Support</h3>
+
+              <p>
+                Dedicated classroom support for pupils who require additional
+                academic, behavioural, emotional or learning assistance.
+              </p>
+
+              <a href="service.html">
+                Learn more
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVICE 2 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card featured">
+              <div class="service-number">02</div>
+
+              <div class="service-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+
+              <h3>SEN Teaching Assistants</h3>
+
+              <p>
+                Professional teaching assistants supporting pupils across
+                mainstream and specialist education settings.
+              </p>
+
+              <a href="service.html">
+                Learn more
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVICE 3 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">03</div>
+
+              <div class="service-icon">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+
+              <h3>Emergency SEN Cover</h3>
+
+              <p>
+                Responsive staffing support for unexpected absences, urgent
+                requirements and short-notice classroom cover.
+              </p>
+
+              <a href="service.html">
+                Learn more
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVICE 4 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">04</div>
+
+              <div class="service-icon">
+                <i class="bi bi-people"></i>
+              </div>
+
+              <h3>Learning Support</h3>
+
+              <p>
+                Additional classroom support helping pupils engage with learning
+                and participate confidently in school life.
+              </p>
+
+              <a href="service.html">
+                Learn more
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVICE 5 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">05</div>
+
+              <div class="service-icon">
+                <i class="bi bi-person-badge"></i>
+              </div>
+
+              <h3>Specialist Support</h3>
+
+              <p>
+                Support for pupils with needs including autism, ADHD, SEMH and
+                additional learning requirements.
+              </p>
+
+              <a href="service.html">
+                Learn more
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVICE 6 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-number">06</div>
+
+              <div class="service-icon">
+                <i class="bi bi-building"></i>
+              </div>
+
+              <h3>School Staffing Solutions</h3>
+
+              <p>
+                Flexible education staffing designed around the requirements and
+                priorities of individual schools.
+              </p>
+
+              <a href="service.html">
+                Learn more
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center services-cta">
+          <a href="service.html" class="btn btn-outline-brand btn-lg">
+            View all services
+
+            <i class="bi bi-arrow-right"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="contact">
+    <!-- =========================================================
+         WHY SWIFTPATH
+    ========================================================== -->
+
+    <section class="section why-section">
       <div class="container">
-        <h2 class="section-title" style="color: white">
-          Partnering With Schools
-        </h2>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-content">
+              <div class="section-label light-label">WHY SWIFTPATH</div>
 
-        <p>
-          We are currently onboarding schools and education providers for the
-          upcoming academic year.
-        </p>
+              <h2 class="text-white">
+                More than filling a vacancy.
+                <span>Supporting a school.</span>
+              </h2>
 
-        <br />
+              <p class="text-light-muted">
+                We understand that education staffing is about more than placing
+                someone into a classroom. The right person needs to be
+                dependable, professional and suited to the needs of the pupils
+                and school.
+              </p>
 
-        <p>
-          To discuss your staffing requirements or request our Supplier
-          Information Pack, please contact us.
-        </p>
+              <div class="feature-list">
+                <div class="feature-list-item">
+                  <div class="feature-check">
+                    <i class="bi bi-check-lg"></i>
+                  </div>
 
-        <br />
+                  <div>
+                    <h4>Safeguarding-led recruitment</h4>
 
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:info@swiftpatheducation.com"
-            >info@swiftpatheducation.com</a
-          >
-        </p>
+                    <p>
+                      A strong focus on safer recruitment, compliance and
+                      safeguarding.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-list-item">
+                  <div class="feature-check">
+                    <i class="bi bi-check-lg"></i>
+                  </div>
+
+                  <div>
+                    <h4>School-focused communication</h4>
+
+                    <p>
+                      Clear communication and responsive support throughout the
+                      staffing process.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-list-item">
+                  <div class="feature-check">
+                    <i class="bi bi-check-lg"></i>
+                  </div>
+
+                  <div>
+                    <h4>Reliable staffing solutions</h4>
+
+                    <p>
+                      Flexible support for planned requirements and urgent
+                      staffing needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="feature.html" class="btn btn-light-brand btn-lg">
+                Explore our approach
+
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="why-image">
+              <img src="img/classroom.png" alt="Classroom support" />
+
+              <div class="why-badge">
+                <i class="bi bi-shield-check"></i>
+
+                <div>
+                  <strong>Safeguarding first</strong>
+
+                  <span> At the heart of our approach </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <h4>SwiftPath SEN Education</h4>
-          <p>Specialist SEN & Education Staffing Agency</p>
-          <p>© 2026 All Rights Reserved</p>
-        </div>
+    <!-- =========================================================
+         HOW IT WORKS
+    ========================================================== -->
 
-        <div>
-          <h4>Compliance</h4>
-          <a href="privacy.html">Privacy Policy</a><br />
-          <a href="safeguarding.html">Safeguarding Policy</a><br />
-          <a href="termsofbusiness.html">Terms of Business</a><br />
-        </div>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="section-label">HOW IT WORKS</div>
 
-        <div>
-          <h4>Company</h4>
+          <h2>
+            A straightforward route to
+            <span>the right support.</span>
+          </h2>
+
           <p>
-            Companies House:
-            <a
-              href="https://find-and-update.company-information.service.gov.uk/company/17294063"
-              >17294063</a
-            >
+            We keep the process simple so schools can focus on what matters most
+            — their pupils.
           </p>
-          <p>London, UK</p>
+        </div>
+
+        <div class="process-grid mt-5">
+          <div class="process-item">
+            <div class="process-number">01</div>
+
+            <div class="process-icon">
+              <i class="bi bi-chat-square-text"></i>
+            </div>
+
+            <h3>Tell us what you need</h3>
+
+            <p>
+              Share your staffing requirements, role and support needs with our
+              team.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-item">
+            <div class="process-number">02</div>
+
+            <div class="process-icon">
+              <i class="bi bi-search"></i>
+            </div>
+
+            <h3>We identify suitable staff</h3>
+
+            <p>
+              We match your requirements with suitable education support
+              professionals.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-item">
+            <div class="process-number">03</div>
+
+            <div class="process-icon">
+              <i class="bi bi-person-check"></i>
+            </div>
+
+            <h3>Staff are introduced</h3>
+
+            <p>
+              Suitable candidates are presented to your school for consideration
+              and placement.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-item">
+            <div class="process-number">04</div>
+
+            <div class="process-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+
+            <h3>Ongoing support</h3>
+
+            <p>
+              We remain available to support communication, staffing and ongoing
+              requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         WHO WE WORK WITH
+    ========================================================== -->
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="section-label">WHO WE WORK WITH</div>
+
+          <h2>
+            Supporting different
+            <span>education settings.</span>
+          </h2>
+
+          <p>
+            Our staffing solutions can support a range of education
+            environments.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="audience-card">
+              <div class="audience-icon">
+                <i class="bi bi-building"></i>
+              </div>
+
+              <h3>Mainstream Schools</h3>
+
+              <p>Classroom and individual pupil support.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="audience-card">
+              <div class="audience-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+
+              <h3>Academies</h3>
+
+              <p>Flexible staffing solutions across academy settings.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="audience-card">
+              <div class="audience-icon">
+                <i class="bi bi-heart"></i>
+              </div>
+
+              <h3>Specialist Settings</h3>
+
+              <p>Support tailored around additional learning needs.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="audience-card">
+              <div class="audience-icon">
+                <i class="bi bi-bank"></i>
+              </div>
+
+              <h3>Education Providers</h3>
+
+              <p>Staffing support for wider education organisations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SAFEGUARDING CTA
+    ========================================================== -->
+
+    <section class="safeguarding-section">
+      <div class="container">
+        <div class="safeguarding-card">
+          <div class="safeguarding-icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+
+          <div class="safeguarding-content">
+            <span class="section-label"> OUR COMMITMENT </span>
+
+            <h2>Safeguarding is not an afterthought.</h2>
+
+            <p>
+              We believe safeguarding should be embedded throughout the staffing
+              process — from recruitment and compliance through to supporting
+              schools and pupils.
+            </p>
+          </div>
+
+          <a href="about.html" class="btn btn-brand">
+            Our safeguarding approach
+
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ENQUIRY
+    ========================================================== -->
+
+    <section class="section enquiry-section" id="enquiry">
+      <div class="container">
+        <div class="row g-0 enquiry-wrapper">
+          <div class="col-lg-5">
+            <div class="enquiry-info">
+              <div class="section-label light-label">SCHOOL ENQUIRY</div>
+
+              <h2>
+                Need staffing
+                <span>support?</span>
+              </h2>
+
+              <p>
+                Tell us what your school needs and our team will review your
+                requirements and get back to you.
+              </p>
+
+              <div class="enquiry-contact">
+                <div class="enquiry-contact-item">
+                  <div>
+                    <i class="bi bi-envelope"></i>
+                  </div>
+
+                  <span>
+                    Email
+                    <strong>info@swiftpath.uk</strong>
+                  </span>
+                </div>
+
+                <div class="enquiry-contact-item">
+                  <div>
+                    <i class="bi bi-telephone"></i>
+                  </div>
+
+                  <span>
+                    Phone
+                    <strong>+44 7465 989610</strong>
+                  </span>
+                </div>
+
+                <div class="enquiry-contact-item">
+                  <div>
+                    <i class="bi bi-clock"></i>
+                  </div>
+
+                  <span>
+                    Availability
+                    <strong>24/7 enquiries</strong>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="enquiry-form">
+              <div class="form-heading">
+                <span> REQUEST STAFF </span>
+
+                <h3>Tell us about your requirement</h3>
+
+                <p>
+                  Complete the form below and a member of our team will respond.
+                </p>
+              </div>
+
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                id="quoteForm">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="3f647ce5-6879-4a9f-af96-d2f0b6326f95" />
+
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New SwiftPath SEN Staffing Enquiry" />
+
+                <input
+                  type="hidden"
+                  name="from_name"
+                  value="SwiftPath SEN Education Website" />
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name"> Your name </label>
+
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your name"
+                      required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email"> Work email </label>
+
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="name@school.co.uk"
+                      required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="school"> School / organisation </label>
+
+                    <input
+                      type="text"
+                      id="school"
+                      name="school"
+                      class="form-control"
+                      placeholder="School or organisation"
+                      required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="phone"> Contact number </label>
+
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                      placeholder="Your phone number" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="support_type"> Support required </label>
+
+                    <select
+                      id="support_type"
+                      name="support_type"
+                      class="form-select"
+                      required>
+                      <option value="" selected disabled>
+                        Select support type
+                      </option>
+
+                      <option value="SEN Teaching Assistant">
+                        SEN Teaching Assistant
+                      </option>
+
+                      <option value="1:1 Classroom Support">
+                        1:1 Classroom Support
+                      </option>
+
+                      <option value="Learning Support">Learning Support</option>
+
+                      <option value="SEMH Support">SEMH Support</option>
+
+                      <option value="Emergency Cover">Emergency Cover</option>
+
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="start_date"> When is support required? </label>
+
+                    <input
+                      type="text"
+                      id="start_date"
+                      name="start_date"
+                      class="form-control"
+                      placeholder="e.g. Immediately / September" />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="message">
+                      Tell us about your requirements
+                    </label>
+
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Please include the role, pupil needs, timetable, duration and any other relevant information."
+                      required></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-brand btn-lg w-100">
+                      Submit staffing enquiry
+
+                      <i class="bi bi-arrow-right"></i>
+                    </button>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="form-note">
+                      <i class="bi bi-lock"></i>
+
+                      Your enquiry will be handled confidentially.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TESTIMONIALS / SOCIAL PROOF
+    ========================================================== -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="section-label">SCHOOL FEEDBACK</div>
+
+          <h2>
+            Building trusted
+            <span>school partnerships.</span>
+          </h2>
+
+          <p>
+            As SwiftPath grows, we'll showcase feedback from schools and
+            education professionals here.
+          </p>
+        </div>
+
+        <div class="testimonial-placeholder">
+          <div class="testimonial-placeholder-icon">
+            <i class="bi bi-chat-quote"></i>
+          </div>
+
+          <h3>School testimonials coming soon</h3>
+
+          <p>
+            We're building long-term partnerships with schools and will publish
+            verified feedback here as our network grows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FOOTER CTA
+    ========================================================== -->
+
+    <section class="footer-cta">
+      <div class="container">
+        <div class="footer-cta-inner">
+          <div>
+            <span> READY TO TALK? </span>
+
+            <h2>Let's find the right support for your school.</h2>
+          </div>
+
+          <a href="#enquiry" class="btn btn-light-brand btn-lg">
+            Request staff
+
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <img
+              src="img/education-logo.png"
+              class="footer-logo"
+              alt="SwiftPath SEN Education" />
+
+            <p class="footer-description">
+              Specialist SEN education staffing for schools, academies and
+              education providers across the UK.
+            </p>
+
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/company/swiftpath-protection"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/swiftpathp/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-2">
+            <h4>Company</h4>
+
+            <a href="about.html"> About us </a>
+
+            <a href="service.html"> Our services </a>
+
+            <a href="feature.html"> Our approach </a>
+
+            <a href="contact.html"> Contact </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <h4>Services</h4>
+
+            <a href="service.html"> 1:1 SEN support </a>
+
+            <a href="service.html"> SEN teaching assistants </a>
+
+            <a href="service.html"> Learning support </a>
+
+            <a href="service.html"> Emergency cover </a>
+          </div>
+
+          <div class="col-lg-3">
+            <h4>Contact</h4>
+
+            <p class="footer-contact">
+              <i class="bi bi-geo-alt"></i>
+
+              167–169 Great Portland Street, London, W1W 5PF
+            </p>
+
+            <p class="footer-contact">
+              <i class="bi bi-envelope"></i>
+
+              <a href="mailto:info@swiftpath.uk"> info@swiftpath.uk </a>
+            </p>
+
+            <p class="footer-contact">
+              <i class="bi bi-telephone"></i>
+
+              <a href="tel:+447465989610"> +44 7465 989610 </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 SwiftPath SEN Education. All rights reserved.</div>
+
+          <div class="footer-legal">
+            <a href="Privacy.html"> Privacy Policy </a>
+
+            <a href="Assets/Anti-Bribery-Policy.pdf"> Anti-Bribery </a>
+
+            <a href="Assets/Anti-Slavery-Policy.pdf"> Anti-Slavery </a>
+
+            <a href="Assets/Insurance.pdf"> Insurance </a>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================== -->
+
+    <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      // Initialise WOW animations
+      if (typeof WOW !== "undefined") {
+        new WOW().init();
+      }
+
+      // Back to top
+      const backToTop = document.querySelector(".back-to-top");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+          backToTop.classList.add("show");
+        } else {
+          backToTop.classList.remove("show");
+        }
+      });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const target = document.querySelector(this.getAttribute("href"));
+
+          if (!target) return;
+
+          e.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Remove loading screen
+      window.addEventListener("load", function () {
+        const spinner = document.getElementById("spinner");
+
+        if (spinner) {
+          spinner.classList.add("hide");
+        }
+      });
+    </script>
   </body>
 </html>

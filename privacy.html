@@ -1,50 +1,1076 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+
     <title>Privacy Policy | SwiftPath SEN Education</title>
+
+    <meta
+      name="description"
+      content="Privacy Policy for SwiftPath SEN Education, explaining how we collect, use, protect and manage personal information." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animate -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
     <style>
-      body {
-        font-family: Arial;
-        padding: 40px;
-        max-width: 900px;
-        margin: auto;
-        line-height: 1.6;
+      /* =========================================================
+         PRIVACY PAGE
+      ========================================================== */
+
+      .legal-hero {
+        position: relative;
+        padding: 110px 0 100px;
+        background: linear-gradient(135deg, #052d50 0%, #074267 100%);
+        overflow: hidden;
       }
-      h1 {
+
+      .legal-hero::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgba(5, 154, 142, 0.12);
+        top: -250px;
+        right: -120px;
+      }
+
+      .legal-hero::after {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        bottom: -200px;
+        left: -100px;
+      }
+
+      .legal-hero .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .legal-hero-content {
+        max-width: 800px;
+      }
+
+      .legal-hero .section-label {
+        color: #7ed8d0;
+        margin-bottom: 18px;
+      }
+
+      .legal-hero h1 {
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(2.5rem, 5vw, 4.2rem);
+        font-weight: 800;
+        line-height: 1.08;
+        margin-bottom: 24px;
+      }
+
+      .legal-hero h1 span {
+        color: #7ed8d0;
+      }
+
+      .legal-hero p {
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1.08rem;
+        line-height: 1.8;
+        max-width: 700px;
+        margin-bottom: 0;
+      }
+
+      .legal-meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 28px;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 0.9rem;
+      }
+
+      .legal-meta i {
+        color: #7ed8d0;
+      }
+
+      .privacy-section {
+        padding: 100px 0;
+        background: #f4f8fb;
+      }
+
+      .privacy-layout {
+        display: grid;
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 70px;
+        align-items: start;
+      }
+
+      .privacy-sidebar {
+        position: sticky;
+        top: 110px;
+      }
+
+      .privacy-sidebar-card {
+        background: #fff;
+        border: 1px solid #e3ebf1;
+        border-radius: 18px;
+        padding: 26px;
+        box-shadow: 0 10px 35px rgba(5, 45, 80, 0.05);
+      }
+
+      .privacy-sidebar-title {
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
         color: #052d50;
+        margin-bottom: 18px;
+      }
+
+      .privacy-sidebar a {
+        display: block;
+        color: #617284;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 9px 0;
+        text-decoration: none;
+        transition: 0.25s ease;
+      }
+
+      .privacy-sidebar a:hover {
+        color: #059a8e;
+        padding-left: 4px;
+      }
+
+      .privacy-content {
+        background: #fff;
+        border-radius: 22px;
+        padding: 55px 60px;
+        box-shadow: 0 12px 40px rgba(5, 45, 80, 0.06);
+      }
+
+      .privacy-content section {
+        scroll-margin-top: 110px;
+        padding-bottom: 42px;
+        margin-bottom: 42px;
+        border-bottom: 1px solid #e7edf2;
+      }
+
+      .privacy-content section:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .privacy-content h2 {
+        font-family: "Manrope", sans-serif;
+        color: #052d50;
+        font-size: 1.65rem;
+        font-weight: 800;
+        margin-bottom: 18px;
+      }
+
+      .privacy-content h3 {
+        font-family: "Manrope", sans-serif;
+        color: #052d50;
+        font-size: 1.15rem;
+        font-weight: 800;
+        margin-top: 28px;
+        margin-bottom: 12px;
+      }
+
+      .privacy-content p {
+        color: #617284;
+        font-size: 0.98rem;
+        line-height: 1.85;
+        margin-bottom: 16px;
+      }
+
+      .privacy-content ul {
+        padding-left: 22px;
+        margin-bottom: 18px;
+      }
+
+      .privacy-content li {
+        color: #617284;
+        font-size: 0.98rem;
+        line-height: 1.8;
+        margin-bottom: 8px;
+      }
+
+      .privacy-content strong {
+        color: #052d50;
+      }
+
+      .privacy-highlight {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        background: #f0f8f7;
+        border-left: 4px solid #059a8e;
+        border-radius: 10px;
+        padding: 22px 24px;
+        margin: 25px 0;
+      }
+
+      .privacy-highlight i {
+        color: #059a8e;
+        font-size: 1.35rem;
+        margin-top: 3px;
+      }
+
+      .privacy-highlight p {
+        margin: 0;
+      }
+
+      .privacy-contact-card {
+        background: #052d50;
+        border-radius: 18px;
+        padding: 30px;
+        margin-top: 25px;
+      }
+
+      .privacy-contact-card h3 {
+        color: #fff;
+        margin-top: 0;
+      }
+
+      .privacy-contact-card p {
+        color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 8px;
+      }
+
+      .privacy-contact-card a {
+        color: #7ed8d0;
+        text-decoration: none;
+      }
+
+      .privacy-contact-card a:hover {
+        color: #fff;
+      }
+
+      .legal-bottom-cta {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .legal-bottom-card {
+        background: linear-gradient(135deg, #052d50 0%, #074267 100%);
+        border-radius: 22px;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .legal-bottom-card h2 {
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .legal-bottom-card p {
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0;
+      }
+
+      @media (max-width: 991px) {
+        .privacy-layout {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+
+        .privacy-sidebar {
+          position: static;
+        }
+
+        .privacy-sidebar-card {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0 20px;
+        }
+
+        .privacy-sidebar-title {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .legal-hero {
+          padding: 80px 0 75px;
+        }
+
+        .privacy-section {
+          padding: 65px 0;
+        }
+
+        .privacy-content {
+          padding: 35px 25px;
+        }
+
+        .privacy-sidebar-card {
+          display: block;
+        }
+
+        .legal-bottom-card {
+          padding: 35px 25px;
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
     </style>
   </head>
+
   <body>
-    <h1>Privacy Policy</h1>
+    <!-- =========================================================
+         PAGE LOADER
+    ========================================================== -->
 
-    <p>
-      SwiftPath SEN Education is committed to protecting your personal data in
-      accordance with UK GDPR and the Data Protection Act 2018.
-    </p>
+    <div id="spinner">
+      <div class="spinner-ring"></div>
+    </div>
 
-    <h2>What we collect</h2>
-    <p>
-      We may collect personal information including names, contact details, CVs,
-      qualifications, and DBS information for recruitment purposes.
-    </p>
+    <!-- =========================================================
+         TOP BAR
+    ========================================================== -->
 
-    <h2>How we use your data</h2>
-    <p>
-      Your data is used solely for recruitment, compliance checks, and placement
-      within educational settings.
-    </p>
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar-inner">
+          <div class="topbar-left">
+            <span>
+              <i class="bi bi-shield-check"></i>
+              Safeguarding-led education staffing
+            </span>
+          </div>
 
-    <h2>Data storage</h2>
-    <p>
-      All data is stored securely and only accessible to authorised personnel.
-    </p>
+          <div class="topbar-right">
+            <a href="mailto:info@swiftpath.uk">
+              <i class="bi bi-envelope"></i>
+              info@swiftpath.uk
+            </a>
 
-    <h2>Your rights</h2>
-    <p>
-      You may request access, correction, or deletion of your data at any time.
-    </p>
+            <a href="tel:+447465989610">
+              <i class="bi bi-telephone"></i>
+              +44 7465 989610
+            </a>
 
-    <p>Contact: info@swiftpatheducation.com</p>
+            <span>
+              <i class="bi bi-clock"></i>
+              24/7 staffing enquiries
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         NAVBAR
+    ========================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top main-navbar">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img
+            src="img/education-logo.png"
+            class="brand-logo"
+            alt="SwiftPath SEN Education" />
+        </a>
+
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto align-items-lg-center">
+            <a href="index.html" class="nav-link"> Home </a>
+
+            <a href="about.html" class="nav-link"> About </a>
+
+            <a href="service.html" class="nav-link"> Services </a>
+
+            <a href="feature.html" class="nav-link"> Our Approach </a>
+
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </div>
+
+          <div class="navbar-actions">
+            <a href="contact.html" class="btn btn-outline-brand">
+              Get in touch
+            </a>
+
+            <a href="contact.html#enquiry" class="btn btn-brand">
+              Request staff
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="navbar-social">
+            <a
+              href="https://www.linkedin.com/company/swiftpath-protection"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/swiftpathp/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section class="legal-hero">
+      <div class="container">
+        <div class="legal-hero-content wow fadeInUp">
+          <div class="section-label">PRIVACY & DATA PROTECTION</div>
+
+          <h1>
+            Privacy
+            <span>Policy.</span>
+          </h1>
+
+          <p>
+            This policy explains how SwiftPath SEN Education collects, uses,
+            stores and protects personal information when you interact with our
+            website or services.
+          </p>
+
+          <div class="legal-meta">
+            <i class="bi bi-calendar3"></i>
+            <span>Last updated: August 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PRIVACY CONTENT
+    ========================================================== -->
+
+    <section class="privacy-section">
+      <div class="container">
+        <div class="privacy-layout">
+          <!-- SIDEBAR -->
+
+          <aside class="privacy-sidebar">
+            <div class="privacy-sidebar-card">
+              <div class="privacy-sidebar-title">On this page</div>
+
+              <a href="#introduction"> Introduction </a>
+
+              <a href="#information"> Information we collect </a>
+
+              <a href="#use"> How we use information </a>
+
+              <a href="#legal-basis"> Legal basis </a>
+
+              <a href="#sharing"> Sharing information </a>
+
+              <a href="#retention"> Data retention </a>
+
+              <a href="#security"> Data security </a>
+
+              <a href="#cookies"> Cookies </a>
+
+              <a href="#rights"> Your rights </a>
+
+              <a href="#contact"> Contact us </a>
+            </div>
+          </aside>
+
+          <!-- MAIN CONTENT -->
+
+          <main class="privacy-content">
+            <!-- INTRODUCTION -->
+
+            <section id="introduction">
+              <h2>1. Introduction</h2>
+
+              <p>
+                SwiftPath SEN Education Ltd ("SwiftPath", "we", "us" or "our")
+                respects your privacy and is committed to protecting the
+                personal information that we process.
+              </p>
+
+              <p>
+                This Privacy Policy explains how we collect, use, store and
+                protect personal information when you visit our website, contact
+                us, submit an enquiry or otherwise interact with SwiftPath SEN
+                Education.
+              </p>
+
+              <div class="privacy-highlight">
+                <i class="bi bi-shield-check"></i>
+
+                <p>
+                  We aim to handle personal information responsibly,
+                  transparently and in accordance with applicable UK data
+                  protection legislation, including the UK GDPR and the Data
+                  Protection Act 2018.
+                </p>
+              </div>
+            </section>
+
+            <!-- INFORMATION -->
+
+            <section id="information">
+              <h2>2. Information we collect</h2>
+
+              <p>
+                The information we collect depends on how you interact with
+                SwiftPath.
+              </p>
+
+              <h3>Information submitted through our website</h3>
+
+              <p>
+                If you submit a school staffing enquiry through our website, we
+                may collect information such as:
+              </p>
+
+              <ul>
+                <li>Your name</li>
+                <li>Work email address</li>
+                <li>School or organisation name</li>
+                <li>Telephone number</li>
+                <li>Staffing requirements</li>
+                <li>Information contained within your enquiry</li>
+              </ul>
+
+              <h3>Candidate information</h3>
+
+              <p>
+                If you apply to join our candidate network or otherwise provide
+                information for recruitment purposes, we may collect information
+                necessary to assess your suitability and complete relevant
+                recruitment and compliance checks.
+              </p>
+
+              <p>
+                This may include contact details, employment history,
+                qualifications, references and information required for
+                safeguarding and pre-employment checks.
+              </p>
+
+              <h3>Website information</h3>
+
+              <p>
+                We may also collect limited technical information when you use
+                our website, such as browser type, device information,
+                approximate location and website usage information.
+              </p>
+            </section>
+
+            <!-- USE -->
+
+            <section id="use">
+              <h2>3. How we use personal information</h2>
+
+              <p>We may use personal information for purposes including:</p>
+
+              <ul>
+                <li>
+                  Responding to enquiries and requests for staffing support
+                </li>
+                <li>Communicating with schools and education organisations</li>
+                <li>Managing candidate applications and recruitment</li>
+                <li>
+                  Conducting appropriate recruitment and compliance checks
+                </li>
+                <li>Providing and managing our services</li>
+                <li>Maintaining appropriate records</li>
+                <li>Improving our website and services</li>
+                <li>Meeting legal and regulatory obligations</li>
+                <li>Protecting the security and integrity of our services</li>
+              </ul>
+
+              <p>
+                We will only use personal information for appropriate and
+                legitimate purposes and will seek to limit the information we
+                collect to what is reasonably necessary.
+              </p>
+            </section>
+
+            <!-- LEGAL BASIS -->
+
+            <section id="legal-basis">
+              <h2>4. Legal basis for processing</h2>
+
+              <p>
+                Where applicable, we process personal information using one or
+                more of the lawful bases available under UK data protection
+                legislation.
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Consent:</strong> where you have given us permission
+                  to process your information for a specific purpose.
+                </li>
+
+                <li>
+                  <strong>Contract:</strong> where processing is necessary to
+                  enter into or perform an agreement.
+                </li>
+
+                <li>
+                  <strong>Legal obligation:</strong> where processing is
+                  necessary for us to comply with a legal requirement.
+                </li>
+
+                <li>
+                  <strong>Legitimate interests:</strong> where processing is
+                  necessary for our legitimate business interests and those
+                  interests are not overridden by your rights and freedoms.
+                </li>
+              </ul>
+
+              <p>
+                Where we rely on consent, you may withdraw that consent at any
+                time, although this will not affect processing that took place
+                before consent was withdrawn.
+              </p>
+            </section>
+
+            <!-- SHARING -->
+
+            <section id="sharing">
+              <h2>5. Sharing personal information</h2>
+
+              <p>We do not sell personal information.</p>
+
+              <p>
+                Where necessary and appropriate, information may be shared with
+                trusted organisations or service providers that help us operate
+                our business and provide our services.
+              </p>
+
+              <p>Depending on the circumstances, this may include:</p>
+
+              <ul>
+                <li>Schools and education organisations</li>
+                <li>Recruitment and compliance service providers</li>
+                <li>IT, website and hosting providers</li>
+                <li>Professional advisers</li>
+                <li>Government bodies or regulators where legally required</li>
+              </ul>
+
+              <p>
+                Where we use third-party service providers to process personal
+                information on our behalf, we expect appropriate contractual and
+                security arrangements to be in place.
+              </p>
+            </section>
+
+            <!-- RETENTION -->
+
+            <section id="retention">
+              <h2>6. How long we keep information</h2>
+
+              <p>
+                We retain personal information only for as long as reasonably
+                necessary for the purposes for which it was collected, including
+                where necessary to meet legal, accounting, safeguarding or
+                regulatory requirements.
+              </p>
+
+              <p>
+                Retention periods may vary depending on the type of information,
+                the reason it was collected and our legal or contractual
+                obligations.
+              </p>
+
+              <p>
+                When personal information is no longer required, we will take
+                appropriate steps to securely delete or anonymise it where
+                reasonably practicable.
+              </p>
+            </section>
+
+            <!-- SECURITY -->
+
+            <section id="security">
+              <h2>7. Data security</h2>
+
+              <p>
+                We take reasonable and appropriate technical and organisational
+                measures to protect personal information against unauthorised
+                access, accidental loss, misuse, alteration or disclosure.
+              </p>
+
+              <p>
+                Access to personal information is limited to individuals and
+                organisations that have a legitimate reason to access it.
+              </p>
+
+              <p>
+                However, no method of transmitting or storing information
+                electronically can be guaranteed to be completely secure.
+              </p>
+            </section>
+
+            <!-- COOKIES -->
+
+            <section id="cookies">
+              <h2>8. Cookies and website technologies</h2>
+
+              <p>
+                Our website may use cookies or similar technologies to support
+                website functionality, security and performance.
+              </p>
+
+              <p>
+                Cookies are small files stored on your device when you visit a
+                website. Some cookies may be necessary for the website to
+                operate correctly, while others may be used for analytics or
+                other purposes.
+              </p>
+
+              <p>
+                You can manage or restrict cookies through your browser
+                settings. Disabling certain cookies may affect how parts of the
+                website function.
+              </p>
+            </section>
+
+            <!-- RIGHTS -->
+
+            <section id="rights">
+              <h2>9. Your data protection rights</h2>
+
+              <p>
+                Depending on the circumstances, UK data protection law gives
+                individuals a number of rights in relation to their personal
+                information.
+              </p>
+
+              <p>These may include the right to:</p>
+
+              <ul>
+                <li>
+                  Request access to personal information we hold about you
+                </li>
+                <li>
+                  Request correction of inaccurate or incomplete information
+                </li>
+                <li>
+                  Request deletion of personal information in certain
+                  circumstances
+                </li>
+                <li>
+                  Request restriction of processing in certain circumstances
+                </li>
+                <li>Object to certain types of processing</li>
+                <li>
+                  Request transfer of certain information to another
+                  organisation
+                </li>
+                <li>Withdraw consent where processing is based on consent</li>
+              </ul>
+
+              <p>
+                These rights are subject to certain legal conditions and
+                exemptions.
+              </p>
+
+              <p>
+                If you wish to exercise a data protection right, please contact
+                us using the details below.
+              </p>
+            </section>
+
+            <!-- CONTACT -->
+
+            <section id="contact">
+              <h2>10. Contact us</h2>
+
+              <p>
+                If you have questions about this Privacy Policy, want to
+                exercise your data protection rights or have concerns about how
+                we handle personal information, please contact SwiftPath SEN
+                Education.
+              </p>
+
+              <div class="privacy-contact-card">
+                <h3>SwiftPath SEN Education Ltd</h3>
+
+                <p>
+                  167–169 Great Portland Street<br />
+                  London<br />
+                  W1W 5PF
+                </p>
+
+                <p>
+                  Email:
+                  <a href="mailto:info@swiftpath.uk"> info@swiftpath.uk </a>
+                </p>
+
+                <p>
+                  Telephone:
+                  <a href="tel:+447465989610"> +44 7465 989610 </a>
+                </p>
+              </div>
+            </section>
+
+            <!-- CHANGES -->
+
+            <section>
+              <h2>11. Changes to this Privacy Policy</h2>
+
+              <p>
+                We may update this Privacy Policy from time to time to reflect
+                changes to our services, legal requirements or how we process
+                personal information.
+              </p>
+
+              <p>
+                The latest version will be published on this page with the
+                relevant update date.
+              </p>
+
+              <p>
+                <strong> Last updated: August 2026 </strong>
+              </p>
+            </section>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CTA
+    ========================================================== -->
+
+    <section class="legal-bottom-cta">
+      <div class="container">
+        <div class="legal-bottom-card">
+          <div>
+            <h2>Have a question about your data?</h2>
+
+            <p>
+              Contact the SwiftPath team if you need further information about
+              how we handle personal information.
+            </p>
+          </div>
+
+          <a href="contact.html" class="btn btn-light-brand btn-lg">
+            Contact us
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <img
+              src="img/education-logo.png"
+              class="footer-logo"
+              alt="SwiftPath SEN Education" />
+
+            <p class="footer-description">
+              Specialist SEN education staffing for schools, academies and
+              education providers across the UK.
+            </p>
+
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/company/swiftpath-protection"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/swiftpathp/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-2">
+            <h4>Company</h4>
+
+            <a href="about.html"> About us </a>
+
+            <a href="service.html"> Our services </a>
+
+            <a href="feature.html"> Our approach </a>
+
+            <a href="contact.html"> Contact </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <h4>Services</h4>
+
+            <a href="service.html"> 1:1 SEN support </a>
+
+            <a href="service.html"> SEN teaching assistants </a>
+
+            <a href="service.html"> Learning support </a>
+
+            <a href="service.html"> Emergency cover </a>
+          </div>
+
+          <div class="col-lg-3">
+            <h4>Contact</h4>
+
+            <p class="footer-contact">
+              <i class="bi bi-geo-alt"></i>
+
+              167–169 Great Portland Street, London, W1W 5PF
+            </p>
+
+            <p class="footer-contact">
+              <i class="bi bi-envelope"></i>
+
+              <a href="mailto:info@swiftpath.uk"> info@swiftpath.uk </a>
+            </p>
+
+            <p class="footer-contact">
+              <i class="bi bi-telephone"></i>
+
+              <a href="tel:+447465989610"> +44 7465 989610 </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 SwiftPath SEN Education. All rights reserved.</div>
+
+          <div class="footer-legal">
+            <a href="Privacy.html"> Privacy Policy </a>
+
+            <a href="Assets/Anti-Bribery-Policy.pdf"> Anti-Bribery </a>
+
+            <a href="Assets/Anti-Slavery-Policy.pdf"> Anti-Slavery </a>
+
+            <a href="Assets/Insurance.pdf"> Insurance </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================== -->
+
+    <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      if (typeof WOW !== "undefined") {
+        new WOW().init();
+      }
+
+      /* Back to top */
+
+      const backToTop = document.querySelector(".back-to-top");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+          backToTop.classList.add("show");
+        } else {
+          backToTop.classList.remove("show");
+        }
+      });
+
+      /* Smooth scrolling */
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const target = document.querySelector(this.getAttribute("href"));
+
+          if (!target) return;
+
+          e.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      /* Remove loading screen */
+
+      window.addEventListener("load", function () {
+        const spinner = document.getElementById("spinner");
+
+        if (spinner) {
+          spinner.classList.add("hide");
+        }
+      });
+    </script>
   </body>
 </html>
